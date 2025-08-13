@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <a id="logo" href="../index.html">Booksmart</a>
+        <section>
+            <a class="menu" href="../index.html">Home</a>
+            <a class="menu" href="./catalouge.html">catalouge</a>
+            <a class="menu" href="../index.html">About us</a>
+            <span><a href="">Sign up</a></span>
+        </section>
+    </nav>
+    <div class="container">
+
+         <div class="inner-container">
+            <h1>Welcome Back!</h1>
+            <p>Glad to have you back! Please log in to continue.</p>
+         </div>
+        <form action="" method="post">
+            <h1>Login</h1>
+            
+            <input class="input-boxes" type="text" placeholder="Email or mobile" required>
+            <input class="input-boxes" type="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@_.]).{8,}" title="Must contains at least one number and one uppercase and one lowercase letters, and atleast 8 or more characters" required>
+            <a href="">Forgot password?</a>
+            <input type="submit" value="Sign in">
+            <p>Don't have account? <a href="">Sign up</a></p>
+        </form>
+        
+    </div>
+</body>
+</html>
