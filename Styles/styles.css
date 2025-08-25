@@ -98,7 +98,7 @@ nav{
     font-weight: 600;
 }
 .menu-item{
-    height: calc(100% - 1in);
+    height: calc(100vh- 1in);
     background-color: #3a1e22;
     min-height: fit-content;
     min-width: fit-content;
@@ -106,7 +106,7 @@ nav{
     float: right;
     text-align: center;
     overflow: scroll;
-    
+    display: none;
 }
 .items{
     width: 80%;
@@ -125,5 +125,39 @@ nav{
     transform: scale(1.03);
     transition: .5s;
 }
-
-
+.posters-section{
+    margin: 10px auto;
+    width: 99%;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+}
+.poster{
+    width: 100%;
+}
+h1{
+    font-size: 18pt;
+    font-weight: 800;
+    margin: 5px 15px;
+    padding: 3px;
+}
+.book-list{
+    width: 99%;
+    margin: 10px auto;
+    word-wrap: break-word;
+    display: flex;
+    overflow: auto;
+}
+.books{
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+.cover-img{
+    width: 150px;
+}
+.book-name{
+    text-align: center;
+}
