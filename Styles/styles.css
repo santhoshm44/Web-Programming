@@ -12,49 +12,7 @@
 body{
     height: 100vh;
     width: 100%;
-    min-width: 1000px;
-}
-#logo{
-    color: #3a1e22;
-    font-weight: 900;
-    font-size: 28pt;
-    margin: 0 15px;
-    padding: 10px;
-    width: 20%;
-    min-width: fit-content;
-
-}
-.menu{
-    margin: 0 20px;
-    width: 20%;
-    height: 45px;
-    display:flex; 
-    justify-content: end;
-}
-.menu-bar{
-    padding: 5px;
-    height: fit-content;
-    cursor: pointer;
-}
-.bars{
-    margin: 4px;
-    display: block;
-    width: 40px;
-    height: 5px;
-    background-color: #3a1e22;
-    border-radius: 3px;
-}
-
-.account{
-    height: 40px;
-    padding: 8px 20px;
-    background-color: #3a1e22;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.account a {
-    color: white;
-    font-weight: 600;
+    min-width: 800px;
 }
 nav{
     height: 1in;
@@ -63,22 +21,33 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+#logo{
+    color: #3a1e22;
+    font-weight: 900;
+    font-size: 26pt;
+    margin: 0 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    min-width: fit-content;
+
+}
 .search-option{
     width: 50%;
     height: 45px;
     display: flex;
-    min-width: 400px;
+    min-width: fit-content;
 }
 #search{
     width: 90%;
     height: 45px;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
     border-radius: 10px;
     border: solid 2px #cfcfcf;
     color: black;
     font-size: 12pt;
     padding: 20px;
     color: black;
+    min-width: 200px;
 }
 #search::placeholder{
     color: #afafaf;
@@ -95,34 +64,66 @@ nav{
     cursor: pointer;
 }
 .cart, .account, .menu-bar{
-    margin: 0 10px;
+    margin: 0 8px;
+}
+.menu{
+    margin: 0 15px 0 0;
+    width: 20%;
+    height: 50px;
+    display:flex; 
+    justify-content: right;
+    align-items: center;
+    min-width: fit-content;
+    max-width: fit-content;
+}
+.menu-bar{
+    padding: 5px;
+    height: fit-content;
+    cursor: pointer;
+}
+.bars{
+    margin: 4px;
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #3a1e22;
+    border-radius: 3px;
+}
+.account{
+    height: 42px;
+    padding: 8px 20px;
+    background-color: #3a1e22;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
 }
 .menu-item{
-    height: calc(100vh - 1in);
+    height: calc(100% - 1in);
     background-color: #3a1e22;
     min-height: fit-content;
     min-width: fit-content;
-    width: 20%;
+    width: 30%;
     float: right;
     text-align: center;
+    overflow: scroll;
     
 }
 .items{
-    
     width: 80%;
-    height: 50px;
+    padding: 5px 0;
     margin: 5px auto;
     line-height: 50px;
     cursor: pointer;
 }
-.items:hover{
-    transform: scale(1.1);
-    transition: .7s;
-}
 .items>a{
     color: white;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.items:hover{
+    transform: scale(1.03);
+    transition: .5s;
 }
 
 
